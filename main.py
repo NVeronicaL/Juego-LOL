@@ -77,8 +77,6 @@ while lista_personajes['personajes'] != [] and respuesta == 'SI':
                     if a['id_ataque'] == op_ataque:
                         a = ataque.Ataque(['id_ataque'], a['nombre'], a['puntaje'])
                         mensaje(p1.nombre, a.nombre, a.puntaje)
-                        #print("Nombre de ataque de p1: ", a.nombre, " | Puntaje del ataque de p1: ", a.puntaje)
-                        #print("Puntaje del ataque de p1: ", a.puntaje)
                         break
                 match op_ataque:
                     case 0 | 1 | 2 | 3 | 4 | 5:     
@@ -92,8 +90,6 @@ while lista_personajes['personajes'] != [] and respuesta == 'SI':
                             if ataque_p2['id_ataque'] == ramdom_ataque['id_ataque']:
                                 ataque_p2 = ataque.Ataque(ataque_p2['id_ataque'], ataque_p2['nombre'], ataque_p2['puntaje'])
                                 mensaje(p2.nombre, ataque_p2.nombre, ataque_p2.puntaje)
-                                #print("Nombre de ataque de p2: ", ataque_p2.nombre, "| Puntaje de ataque de p2: ", ataque_p2.puntaje)
-                                #print("Puntaje de ataque de p2: ", ataque_p2.puntaje)
                                 break
                         # p2 ataca a p1 
                         p2.atacar(p1, ataque_p2)

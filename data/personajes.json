@@ -4,20 +4,7 @@
             "id_personaje": 0,
             "nombre": "AKALI",
             "opcion": 0,
-            "habilidades": [
-                {
-                    "id_habilidad": 0
-                },
-                {
-                    "id_habilidad": 1
-                },
-                {
-                    "id_habilidad": 2
-                },
-                {
-                    "id_habilidad": 3
-                }
-            ],
+            "id_habilidad": 0,
             "vida": 100
         },
         {
