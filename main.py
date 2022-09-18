@@ -75,14 +75,7 @@ while lista_personajes['personajes'] != [] and respuesta == 'SI':
                         break
                 match op_ataque:
                     case 0:     
-                        # for a in lista_attacks['ataques']:
-                        #     if a['id_ataque'] == op_ataque:
-                        #         print("\n********************* " + a['nombre'] + " *********************")
-                        #         # restar la vida del personaje que quiero atacar
-                        #         for p in lista_personajes['personajes']:
-                        #             if p['id_personaje'] == op_personaje:
-                        #                 p['vida'] -= a['puntaje']
-                        #                 break
+
                         p1.atacar(p2, a)
                         print("Vida restante de p2", p2.vida)
 
@@ -113,14 +106,7 @@ while lista_personajes['personajes'] != [] and respuesta == 'SI':
                             respuesta = input().upper()
                             break     
                     case 1: 
-                        # for a in lista_attacks['ataques']:
-                            # if a['id_ataque'] == op_ataque:
-                            #     print("\n********************* " + a['nombre'] + " *********************")
-                            #     # restar la vida del personaje que quiero atacar
-                            #     for p in lista_personajes['personajes']:
-                            #         if p['id_personaje'] == op_personaje:
-                            #             p['vida'] -= a['puntaje']
-                            #             break
+
                         p1.atacar(p2, a)
                         print("Vida restante de p2", p2.vida)
 
@@ -149,24 +135,9 @@ while lista_personajes['personajes'] != [] and respuesta == 'SI':
                             print("***********************************************")
                             print("\nDesea volver a elegir el personaje a atacar? SI o NO")
                             respuesta = input().upper()
-                            break  
-                        # if p2.vida == 0:
-                        #     print("***********************************************")
-                        #     print("*******************GAME OVER*******************")
-                        #     print("Vida del jugador", p2.nombre, "en :", p2.vida)
-                        #     print("***********************************************")
-                        #     print("\nDesea volver a jugar LOL? SI o NO")
-                        #     respuesta = input().upper()
-                        #     break   
+                            break    
                     case 2: 
-                        # for a in lista_attacks['ataques']:
-                        #     if a['id_ataque'] == op_ataque:
-                        #         print("\n********************* " + a['nombre'] + " *********************")
-                        #         # restar la vida del personaje que quiero atacar
-                        #         for p in lista_personajes['personajes']:
-                        #             if p['id_personaje'] == op_personaje:
-                        #                 p['vida'] -= a['puntaje']
-                        #                 break
+
                         p1.atacar(p2, a)
                         print("Vida restante de p2", p2.vida)
 
@@ -197,14 +168,7 @@ while lista_personajes['personajes'] != [] and respuesta == 'SI':
                             respuesta = input().upper()
                             break     
                     case 3: 
-                        # for a in lista_attacks['ataques']:
-                        #     if a['id_ataque'] == op_ataque:
-                        #         print("\n********************* " + a['nombre'] + " *********************")
-                        #         # restar la vida del personaje que quiero atacar
-                        #         for p in lista_personajes['personajes']:
-                        #             if p['id_personaje'] == op_personaje:
-                        #                 p['vida'] -= a['puntaje']
-                        #                 break
+
                         p1.atacar(p2, a)
                         print("Vida restante de p2", p2.vida)
 
@@ -235,14 +199,7 @@ while lista_personajes['personajes'] != [] and respuesta == 'SI':
                             respuesta = input().upper()
                             break     
                     case 4: 
-                        # for a in lista_attacks['ataques']:
-                        #     if a['id_ataque'] == op_ataque:
-                        #         print("\n********************* " + a['nombre'] + " *********************")
-                        #         # restar la vida del personaje que quiero atacar
-                        #         for p in lista_personajes['personajes']:
-                        #             if p['id_personaje'] == op_personaje:
-                        #                 p['vida'] -= a['puntaje']
-                        #                 break
+
                         p1.atacar(p2, a)
                         print("Vida restante de p2", p2.vida)
 
@@ -273,13 +230,6 @@ while lista_personajes['personajes'] != [] and respuesta == 'SI':
                             respuesta = input().upper()
                             break     
                     case 5: 
-                        # for a in lista_attacks['ataques']:
-                        #     if a['id_ataque'] == op_ataque:
-                        #         print("\n********************* " + a['nombre'] + " *********************")
-                        #         for p in lista_personajes['personajes']:
-                        #             if p['id_personaje'] == op_personaje:
-                        #                 p['vida'] -= a['puntaje']
-                        #                 break
                                 
                         p1.atacar(p2, a)
                         print("Vida restante de p2", p2.vida)
@@ -314,32 +264,9 @@ while lista_personajes['personajes'] != [] and respuesta == 'SI':
         case _: 
             print("Error, elija un personaje disponible")
             break
-        # case 1:
-        
-        # case 2:
-
-        # case 3:
-
-        # case 4:
-
-        # case 5: 
 
 
 
-# print("Conocer habilidad del personaje? SI o NO")
-
-# print("Comenzar Partida del Juego? SI o NO")
-
-# print("Introduce una opción del Menu")
-# 1.
-# print("p2 contrataca con: ")
-# 4.
-# print("Introduce una opción del Menu")
-# 2.
-# print("p2 contrataca con: ")
-# 3.
-# print("Introduce una opción del Menu")
-# 4.
 
 
 
