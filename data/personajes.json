@@ -2,7 +2,7 @@
     "personajes": [
         {
             "id_personaje": 0,
-            "nombre": "A",
+            "nombre": "AKALI",
             "opcion": 0,
             "habilidades": [
                 {
@@ -22,35 +22,35 @@
         },
         {
             "id_personaje": 1,
-            "nombre": "B",
+            "nombre": "ANNIE",
             "opcion": 1,
             "id_habilidad": 0,
             "vida": 100
         },
         {
             "id_personaje": 2,
-            "nombre": "C",
+            "nombre": "BRAND",
             "opcion": 2,
             "id_habilidad": 0,
             "vida": 100
         },
         {
             "id_personaje": 3,
-            "nombre": "D",
+            "nombre": "DARIUS",
             "opcion": 3,
             "id_habilidad": 0,
             "vida": 100
         },
         {
             "id_personaje": 4,
-            "nombre": "E",
+            "nombre": "ELISE",
             "opcion": 4,
             "id_habilidad": 0,
             "vida": 100
         },
         {
             "id_personaje": 5,
-            "nombre": "F",
+            "nombre": "KARMA",
             "opcion": 5,
             "id_habilidad": 0,
             "vida": 100
