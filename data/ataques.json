@@ -1,0 +1,40 @@
+{
+    "ataques": [
+        {
+            "id_ataque": 0,
+            "nombre": "DEFENSA",
+            "puntaje": 0,
+            "opcion": 0
+        },
+        {
+            "id_ataque": 1,
+            "nombre": "MARCA DE LA ASESINA",
+            "puntaje": 20,
+            "opcion": 1
+        },
+        {
+            "id_ataque": 2,
+            "nombre": "RÁFAGA DE LOS CINCO FILOS",
+            "puntaje": 40,
+            "opcion": 2
+        },
+        {
+            "id_ataque": 3,
+            "nombre": "MANTO CREPUSCULAR",
+            "puntaje": 60,
+            "opcion": 3
+        },
+        {
+            "id_ataque": 4,
+            "nombre": "MANIOBRA DE SHURIKEN",
+            "puntaje": 80,
+            "opcion": 4
+        },
+        {
+            "id_ataque": 5,
+            "nombre": "EJECUCIÓN PERFECTA",
+            "puntaje": 100,
+            "opcion": 5
+        }
+    ]
+}
