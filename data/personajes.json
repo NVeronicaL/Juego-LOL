@@ -4,6 +4,7 @@
             "id_personaje": 0,
             "nombre": "AKALI",
             "opcion": 0,
+            "id_ataque": 0,
             "id_habilidad": 0,
             "vida": 100
         },
@@ -11,35 +12,40 @@
             "id_personaje": 1,
             "nombre": "ANNIE",
             "opcion": 1,
-            "id_habilidad": 0,
+            "id_ataque": 1,
+            "id_habilidad": 1,
             "vida": 100
         },
         {
             "id_personaje": 2,
             "nombre": "BRAND",
             "opcion": 2,
-            "id_habilidad": 0,
+            "id_ataque": 2,
+            "id_habilidad": 2,
             "vida": 100
         },
         {
             "id_personaje": 3,
             "nombre": "DARIUS",
             "opcion": 3,
-            "id_habilidad": 0,
+            "id_ataque": 3,
+            "id_habilidad": 3,
             "vida": 100
         },
         {
             "id_personaje": 4,
             "nombre": "ELISE",
             "opcion": 4,
-            "id_habilidad": 0,
+            "id_ataque": 4,
+            "id_habilidad": 4,
             "vida": 100
         },
         {
             "id_personaje": 5,
             "nombre": "KARMA",
             "opcion": 5,
-            "id_habilidad": 0,
+            "id_ataque": 5,
+            "id_habilidad": 5,
             "vida": 100
         }
     ]
