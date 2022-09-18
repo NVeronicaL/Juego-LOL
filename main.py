@@ -74,7 +74,7 @@ while lista_personajes['personajes'] != [] and respuesta == 'SI':
                         print("Puntaje del ataque de p1: ", a.puntaje)
                         break
                 match op_ataque:
-                    case 0:     
+                    case 0 | 1 | 2 | 3 | 4 |5:     
 
                         p1.atacar(p2, a)
                         print("Vida restante de p2", p2.vida)
@@ -104,162 +104,166 @@ while lista_personajes['personajes'] != [] and respuesta == 'SI':
                             print("***********************************************")
                             print("\nDesea volver a elegir el personaje a atacar? SI o NO")
                             respuesta = input().upper()
-                            break     
-                    case 1: 
-
-                        p1.atacar(p2, a)
-                        print("Vida restante de p2", p2.vida)
-
-                        # Ataque aleatorio del jugador contrincante
-                        ramdom_ataque = random.choice(lista_attacks['ataques'])
-                        for ataque_p2 in lista_attacks['ataques']:
-                            if ataque_p2['id_ataque'] == ramdom_ataque['id_ataque']:
-                                ataque_p2 = ataque.Ataque(ataque_p2['id_ataque'], ataque_p2['nombre'], ataque_p2['puntaje'])
-                                print("Nombre de ataque de p2: ", ataque_p2.nombre)
-                                print("Puntaje de ataque de p2: ", ataque_p2.puntaje)
-                                break
-                        p2.atacar(p1, ataque_p2)
-                        print("Vida restante de p1", p1.vida)
-                        if p1.vida <= 0:
-                            print("***********************************************")
-                            print("*******************GAME OVER*******************")
-                            print("Vida del jugador", p1.nombre, "en :", p1.vida)
-                            print("***********************************************")
-                            print("\nDesea volver a jugar LOL? SI o NO")
-                            respuesta = input().upper()
                             break
-                        if p2.vida <= 0:
-                            print("***********************************************")
-                            print("*******************GAME OVER*******************")
-                            print("Vida del jugador", p2.nombre, "en :", p2.vida)
-                            print("***********************************************")
-                            print("\nDesea volver a elegir el personaje a atacar? SI o NO")
-                            respuesta = input().upper()
-                            break    
-                    case 2: 
+                    case _:
+                        print("Error, elija un personaje disponible")
+                        break
 
-                        p1.atacar(p2, a)
-                        print("Vida restante de p2", p2.vida)
+                    # case 1: 
 
-                        # Ataque aleatorio del jugador contrincante
-                        ramdom_ataque = random.choice(lista_attacks['ataques'])
-                        for ataque_p2 in lista_attacks['ataques']:
-                            if ataque_p2['id_ataque'] == ramdom_ataque['id_ataque']:
-                                ataque_p2 = ataque.Ataque(ataque_p2['id_ataque'], ataque_p2['nombre'], ataque_p2['puntaje'])
-                                print("Nombre de ataque de p2: ", ataque_p2.nombre)
-                                print("Puntaje de ataque de p2: ", ataque_p2.puntaje)
-                                break
-                        p2.atacar(p1, ataque_p2)
-                        print("Vida restante de p1", p1.vida)
-                        if p1.vida <= 0:
-                            print("***********************************************")
-                            print("*******************GAME OVER*******************")
-                            print("Vida del jugador", p1.nombre, "en :", p1.vida)
-                            print("***********************************************")
-                            print("\nDesea volver a jugar LOL? SI o NO")
-                            respuesta = input().upper()
-                            break
-                        if p2.vida <= 0:
-                            print("***********************************************")
-                            print("*******************GAME OVER*******************")
-                            print("Vida del jugador", p2.nombre, "en :", p2.vida)
-                            print("***********************************************")
-                            print("\nDesea volver a elegir el personaje a atacar? SI o NO")
-                            respuesta = input().upper()
-                            break     
-                    case 3: 
+                    #     p1.atacar(p2, a)
+                    #     print("Vida restante de p2", p2.vida)
 
-                        p1.atacar(p2, a)
-                        print("Vida restante de p2", p2.vida)
+                    #     # Ataque aleatorio del jugador contrincante
+                    #     ramdom_ataque = random.choice(lista_attacks['ataques'])
+                    #     for ataque_p2 in lista_attacks['ataques']:
+                    #         if ataque_p2['id_ataque'] == ramdom_ataque['id_ataque']:
+                    #             ataque_p2 = ataque.Ataque(ataque_p2['id_ataque'], ataque_p2['nombre'], ataque_p2['puntaje'])
+                    #             print("Nombre de ataque de p2: ", ataque_p2.nombre)
+                    #             print("Puntaje de ataque de p2: ", ataque_p2.puntaje)
+                    #             break
+                    #     p2.atacar(p1, ataque_p2)
+                    #     print("Vida restante de p1", p1.vida)
+                    #     if p1.vida <= 0:
+                    #         print("***********************************************")
+                    #         print("*******************GAME OVER*******************")
+                    #         print("Vida del jugador", p1.nombre, "en :", p1.vida)
+                    #         print("***********************************************")
+                    #         print("\nDesea volver a jugar LOL? SI o NO")
+                    #         respuesta = input().upper()
+                    #         break
+                    #     if p2.vida <= 0:
+                    #         print("***********************************************")
+                    #         print("*******************GAME OVER*******************")
+                    #         print("Vida del jugador", p2.nombre, "en :", p2.vida)
+                    #         print("***********************************************")
+                    #         print("\nDesea volver a elegir el personaje a atacar? SI o NO")
+                    #         respuesta = input().upper()
+                    #         break    
+                    # case 2: 
 
-                        # Ataque aleatorio del jugador contrincante
-                        ramdom_ataque = random.choice(lista_attacks['ataques'])
-                        for ataque_p2 in lista_attacks['ataques']:
-                            if ataque_p2['id_ataque'] == ramdom_ataque['id_ataque']:
-                                ataque_p2 = ataque.Ataque(ataque_p2['id_ataque'], ataque_p2['nombre'], ataque_p2['puntaje'])
-                                print("Nombre de ataque de p2: ", ataque_p2.nombre)
-                                print("Puntaje de ataque de p2: ", ataque_p2.puntaje)
-                                break
-                        p2.atacar(p1, ataque_p2)
-                        print("Vida restante de p1", p1.vida)
-                        if p1.vida <= 0:
-                            print("***********************************************")
-                            print("*******************GAME OVER*******************")
-                            print("Vida del jugador", p1.nombre, "en :", p1.vida)
-                            print("***********************************************")
-                            print("\nDesea volver a jugar LOL? SI o NO")
-                            respuesta = input().upper()
-                            break
-                        if p2.vida <= 0:
-                            print("***********************************************")
-                            print("*******************GAME OVER*******************")
-                            print("Vida del jugador", p2.nombre, "en :", p2.vida)
-                            print("***********************************************")
-                            print("\nDesea volver a elegir el personaje a atacar? SI o NO")
-                            respuesta = input().upper()
-                            break     
-                    case 4: 
+                    #     p1.atacar(p2, a)
+                    #     print("Vida restante de p2", p2.vida)
 
-                        p1.atacar(p2, a)
-                        print("Vida restante de p2", p2.vida)
+                    #     # Ataque aleatorio del jugador contrincante
+                    #     ramdom_ataque = random.choice(lista_attacks['ataques'])
+                    #     for ataque_p2 in lista_attacks['ataques']:
+                    #         if ataque_p2['id_ataque'] == ramdom_ataque['id_ataque']:
+                    #             ataque_p2 = ataque.Ataque(ataque_p2['id_ataque'], ataque_p2['nombre'], ataque_p2['puntaje'])
+                    #             print("Nombre de ataque de p2: ", ataque_p2.nombre)
+                    #             print("Puntaje de ataque de p2: ", ataque_p2.puntaje)
+                    #             break
+                    #     p2.atacar(p1, ataque_p2)
+                    #     print("Vida restante de p1", p1.vida)
+                    #     if p1.vida <= 0:
+                    #         print("***********************************************")
+                    #         print("*******************GAME OVER*******************")
+                    #         print("Vida del jugador", p1.nombre, "en :", p1.vida)
+                    #         print("***********************************************")
+                    #         print("\nDesea volver a jugar LOL? SI o NO")
+                    #         respuesta = input().upper()
+                    #         break
+                    #     if p2.vida <= 0:
+                    #         print("***********************************************")
+                    #         print("*******************GAME OVER*******************")
+                    #         print("Vida del jugador", p2.nombre, "en :", p2.vida)
+                    #         print("***********************************************")
+                    #         print("\nDesea volver a elegir el personaje a atacar? SI o NO")
+                    #         respuesta = input().upper()
+                    #         break     
+                    # case 3: 
 
-                        # Ataque aleatorio del jugador contrincante
-                        ramdom_ataque = random.choice(lista_attacks['ataques'])
-                        for ataque_p2 in lista_attacks['ataques']:
-                            if ataque_p2['id_ataque'] == ramdom_ataque['id_ataque']:
-                                ataque_p2 = ataque.Ataque(ataque_p2['id_ataque'], ataque_p2['nombre'], ataque_p2['puntaje'])
-                                print("Nombre de ataque de p2: ", ataque_p2.nombre)
-                                print("Puntaje de ataque de p2: ", ataque_p2.puntaje)
-                                break
-                        p2.atacar(p1, ataque_p2)
-                        print("Vida restante de p1", p1.vida)
-                        if p1.vida <= 0:
-                            print("***********************************************")
-                            print("*******************GAME OVER*******************")
-                            print("Vida del jugador", p1.nombre, "en :", p1.vida)
-                            print("***********************************************")
-                            print("\nDesea volver a jugar LOL? SI o NO")
-                            respuesta = input().upper()
-                            break
-                        if p2.vida <= 0:
-                            print("***********************************************")
-                            print("*******************GAME OVER*******************")
-                            print("Vida del jugador", p2.nombre, "en :", p2.vida)
-                            print("***********************************************")
-                            print("\nDesea volver a elegir el personaje a atacar? SI o NO")
-                            respuesta = input().upper()
-                            break     
-                    case 5: 
+                    #     p1.atacar(p2, a)
+                    #     print("Vida restante de p2", p2.vida)
+
+                    #     # Ataque aleatorio del jugador contrincante
+                    #     ramdom_ataque = random.choice(lista_attacks['ataques'])
+                    #     for ataque_p2 in lista_attacks['ataques']:
+                    #         if ataque_p2['id_ataque'] == ramdom_ataque['id_ataque']:
+                    #             ataque_p2 = ataque.Ataque(ataque_p2['id_ataque'], ataque_p2['nombre'], ataque_p2['puntaje'])
+                    #             print("Nombre de ataque de p2: ", ataque_p2.nombre)
+                    #             print("Puntaje de ataque de p2: ", ataque_p2.puntaje)
+                    #             break
+                    #     p2.atacar(p1, ataque_p2)
+                    #     print("Vida restante de p1", p1.vida)
+                    #     if p1.vida <= 0:
+                    #         print("***********************************************")
+                    #         print("*******************GAME OVER*******************")
+                    #         print("Vida del jugador", p1.nombre, "en :", p1.vida)
+                    #         print("***********************************************")
+                    #         print("\nDesea volver a jugar LOL? SI o NO")
+                    #         respuesta = input().upper()
+                    #         break
+                    #     if p2.vida <= 0:
+                    #         print("***********************************************")
+                    #         print("*******************GAME OVER*******************")
+                    #         print("Vida del jugador", p2.nombre, "en :", p2.vida)
+                    #         print("***********************************************")
+                    #         print("\nDesea volver a elegir el personaje a atacar? SI o NO")
+                    #         respuesta = input().upper()
+                    #         break     
+                    # case 4: 
+
+                    #     p1.atacar(p2, a)
+                    #     print("Vida restante de p2", p2.vida)
+
+                    #     # Ataque aleatorio del jugador contrincante
+                    #     ramdom_ataque = random.choice(lista_attacks['ataques'])
+                    #     for ataque_p2 in lista_attacks['ataques']:
+                    #         if ataque_p2['id_ataque'] == ramdom_ataque['id_ataque']:
+                    #             ataque_p2 = ataque.Ataque(ataque_p2['id_ataque'], ataque_p2['nombre'], ataque_p2['puntaje'])
+                    #             print("Nombre de ataque de p2: ", ataque_p2.nombre)
+                    #             print("Puntaje de ataque de p2: ", ataque_p2.puntaje)
+                    #             break
+                    #     p2.atacar(p1, ataque_p2)
+                    #     print("Vida restante de p1", p1.vida)
+                    #     if p1.vida <= 0:
+                    #         print("***********************************************")
+                    #         print("*******************GAME OVER*******************")
+                    #         print("Vida del jugador", p1.nombre, "en :", p1.vida)
+                    #         print("***********************************************")
+                    #         print("\nDesea volver a jugar LOL? SI o NO")
+                    #         respuesta = input().upper()
+                    #         break
+                    #     if p2.vida <= 0:
+                    #         print("***********************************************")
+                    #         print("*******************GAME OVER*******************")
+                    #         print("Vida del jugador", p2.nombre, "en :", p2.vida)
+                    #         print("***********************************************")
+                    #         print("\nDesea volver a elegir el personaje a atacar? SI o NO")
+                    #         respuesta = input().upper()
+                    #         break     
+                    # case 5: 
                                 
-                        p1.atacar(p2, a)
-                        print("Vida restante de p2", p2.vida)
+                    #     p1.atacar(p2, a)
+                    #     print("Vida restante de p2", p2.vida)
 
-                        # Ataque aleatorio del jugador contrincante
-                        ramdom_ataque = random.choice(lista_attacks['ataques'])
-                        for ataque_p2 in lista_attacks['ataques']:
-                            if ataque_p2['id_ataque'] == ramdom_ataque['id_ataque']:
-                                ataque_p2 = ataque.Ataque(ataque_p2['id_ataque'], ataque_p2['nombre'], ataque_p2['puntaje'])
-                                print("Nombre de ataque de p2: ", ataque_p2.nombre)
-                                print("Puntaje de ataque de p2: ", ataque_p2.puntaje)
-                                break
-                        p2.atacar(p1, ataque_p2)
-                        print("Vida restante de p1", p1.vida)
-                        if p1.vida <= 0:
-                            print("***********************************************")
-                            print("*******************GAME OVER*******************")
-                            print("Vida del jugador", p1.nombre, "en :", p1.vida)
-                            print("***********************************************")
-                            print("\nDesea volver a jugar LOL? SI o NO")
-                            respuesta = input().upper()
-                            break
-                        if p2.vida <= 0:
-                            print("***********************************************")
-                            print("*******************GAME OVER*******************")
-                            print("Vida del jugador", p2.nombre, "en :", p2.vida)
-                            print("***********************************************")
-                            print("\nDesea volver a elegir el personaje a atacar? SI o NO")
-                            respuesta = input().upper()
-                            break                                                      
+                    #     # Ataque aleatorio del jugador contrincante
+                    #     ramdom_ataque = random.choice(lista_attacks['ataques'])
+                    #     for ataque_p2 in lista_attacks['ataques']:
+                    #         if ataque_p2['id_ataque'] == ramdom_ataque['id_ataque']:
+                    #             ataque_p2 = ataque.Ataque(ataque_p2['id_ataque'], ataque_p2['nombre'], ataque_p2['puntaje'])
+                    #             print("Nombre de ataque de p2: ", ataque_p2.nombre)
+                    #             print("Puntaje de ataque de p2: ", ataque_p2.puntaje)
+                    #             break
+                    #     p2.atacar(p1, ataque_p2)
+                    #     print("Vida restante de p1", p1.vida)
+                    #     if p1.vida <= 0:
+                    #         print("***********************************************")
+                    #         print("*******************GAME OVER*******************")
+                    #         print("Vida del jugador", p1.nombre, "en :", p1.vida)
+                    #         print("***********************************************")
+                    #         print("\nDesea volver a jugar LOL? SI o NO")
+                    #         respuesta = input().upper()
+                    #         break
+                    #     if p2.vida <= 0:
+                    #         print("***********************************************")
+                    #         print("*******************GAME OVER*******************")
+                    #         print("Vida del jugador", p2.nombre, "en :", p2.vida)
+                    #         print("***********************************************")
+                    #         print("\nDesea volver a elegir el personaje a atacar? SI o NO")
+                    #         respuesta = input().upper()
+                    #         break                                                      
                                 
         case _: 
             print("Error, elija un personaje disponible")
