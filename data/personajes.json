@@ -1,0 +1,59 @@
+{
+    "personajes": [
+        {
+            "id_personaje": 0,
+            "nombre": "A",
+            "opcion": 0,
+            "habilidades": [
+                {
+                    "id_habilidad": 0
+                },
+                {
+                    "id_habilidad": 1
+                },
+                {
+                    "id_habilidad": 2
+                },
+                {
+                    "id_habilidad": 3
+                }
+            ],
+            "vida": 100
+        },
+        {
+            "id_personaje": 1,
+            "nombre": "B",
+            "opcion": 1,
+            "id_habilidad": 0,
+            "vida": 100
+        },
+        {
+            "id_personaje": 2,
+            "nombre": "C",
+            "opcion": 2,
+            "id_habilidad": 0,
+            "vida": 100
+        },
+        {
+            "id_personaje": 3,
+            "nombre": "D",
+            "opcion": 3,
+            "id_habilidad": 0,
+            "vida": 100
+        },
+        {
+            "id_personaje": 4,
+            "nombre": "E",
+            "opcion": 4,
+            "id_habilidad": 0,
+            "vida": 100
+        },
+        {
+            "id_personaje": 5,
+            "nombre": "F",
+            "opcion": 5,
+            "id_habilidad": 0,
+            "vida": 100
+        }
+    ]
+}
