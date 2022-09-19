@@ -4,7 +4,44 @@
             "id_personaje": 0,
             "nombre": "AKALI",
             "opcion": 0,
-            "id_ataque": 0,
+            "ataques": [
+                {
+                    "id_ataque": 0,
+                    "nombre": "DEFENSA",
+                    "puntaje": 0,
+                    "opcion": 0
+                },
+                {
+                    "id_ataque": 1,
+                    "nombre": "MARCA DE LA ASESINA",
+                    "puntaje": 20,
+                    "opcion": 1
+                },
+                {
+                    "id_ataque": 2,
+                    "nombre": "RÁFAGA DE LOS CINCO FILOS",
+                    "puntaje": 40,
+                    "opcion": 2
+                },
+                {
+                    "id_ataque": 3,
+                    "nombre": "MANTO CREPUSCULAR",
+                    "puntaje": 60,
+                    "opcion": 3
+                },
+                {
+                    "id_ataque": 4,
+                    "nombre": "MANIOBRA DE SHURIKEN",
+                    "puntaje": 80,
+                    "opcion": 4
+                },
+                {
+                    "id_ataque": 5,
+                    "nombre": "EJECUCIÓN PERFECTA",
+                    "puntaje": 100,
+                    "opcion": 5
+                }
+            ],
             "id_habilidad": 0,
             "vida": 100
         },
@@ -12,23 +49,134 @@
             "id_personaje": 1,
             "nombre": "ANNIE",
             "opcion": 1,
-            "id_ataque": 1,
+            "ataques": [
+                {
+                    "id_ataque": 0,
+                    "nombre": "DEFENSA",
+                    "puntaje": 0,
+                    "opcion": 0
+                },
+                {
+                    "id_ataque": 1,
+                    "nombre": "PIROMANÍA",
+                    "puntaje": 20,
+                    "opcion": 1
+                },
+                {
+                    "id_ataque": 2,
+                    "nombre": "DESINTEGRAR",
+                    "puntaje": 40,
+                    "opcion": 2
+                },
+                {
+                    "id_ataque": 3,
+                    "nombre": "INCINERAR",
+                    "puntaje": 60,
+                    "opcion": 3
+                },
+                {
+                    "id_ataque": 4,
+                    "nombre": "ESCUDO FUNDIDO",
+                    "puntaje": 80,
+                    "opcion": 4
+                },
+                {
+                    "id_ataque": 5,
+                    "nombre": "INVOCAR: TIBBERS",
+                    "puntaje": 100,
+                    "opcion": 5
+                }                
+            ],
             "id_habilidad": 1,
             "vida": 100
         },
         {
             "id_personaje": 2,
-            "nombre": "BRAND",
+            "nombre": "LUCIAN",
             "opcion": 2,
-            "id_ataque": 2,
+            "ataques": [
+                {
+                    "id_ataque": 0,
+                    "nombre": "DEFENSA",
+                    "puntaje": 0,
+                    "opcion": 0
+                },
+                {
+                    "id_ataque": 1,
+                    "nombre": "BALAS LUMINOSAS",
+                    "puntaje": 20,
+                    "opcion": 1
+                },
+                {
+                    "id_ataque": 2,
+                    "nombre": "LUZ LACERANTE",
+                    "puntaje": 40,
+                    "opcion": 2
+                },
+                {
+                    "id_ataque": 3,
+                    "nombre": "RESPLANDOR ARDIENTE",
+                    "puntaje": 60,
+                    "opcion": 3
+                },
+                {
+                    "id_ataque": 4,
+                    "nombre": "PERSECUCIÓN IMPLACABLE",
+                    "puntaje": 80,
+                    "opcion": 4
+                },
+                {
+                    "id_ataque": 5,
+                    "nombre": "EL SACRIFICIO",
+                    "puntaje": 100,
+                    "opcion": 5
+                }                
+            ],
             "id_habilidad": 2,
             "vida": 100
         },
         {
             "id_personaje": 3,
-            "nombre": "DARIUS",
+            "nombre": "SHACO",
             "opcion": 3,
-            "id_ataque": 3,
+            "ataques": [
+                {
+                    "id_ataque": 0,
+                    "nombre": "DEFENSA",
+                    "puntaje": 0,
+                    "opcion": 0
+                },
+                {
+                    "id_ataque": 1,
+                    "nombre": "PUÑALADA EN LA ESPALDA",
+                    "puntaje": 20,
+                    "opcion": 1
+                },
+                {
+                    "id_ataque": 2,
+                    "nombre": "ENGAÑO",
+                    "puntaje": 40,
+                    "opcion": 2
+                },
+                {
+                    "id_ataque": 3,
+                    "nombre": "CAJA SORPRESA",
+                    "puntaje": 60,
+                    "opcion": 3
+                },
+                {
+                    "id_ataque": 4,
+                    "nombre": "VENENO DE DOBLE FILO",
+                    "puntaje": 80,
+                    "opcion": 4
+                },
+                {
+                    "id_ataque": 5,
+                    "nombre": "ALUCINACIÓN",
+                    "puntaje": 100,
+                    "opcion": 5
+                }
+            ],
             "id_habilidad": 3,
             "vida": 100
         },
@@ -36,7 +184,44 @@
             "id_personaje": 4,
             "nombre": "ELISE",
             "opcion": 4,
-            "id_ataque": 4,
+            "ataques": [
+                {
+                    "id_ataque": 0,
+                    "nombre": "DEFENSA",
+                    "puntaje": 0,
+                    "opcion": 0
+                },
+                {
+                    "id_ataque": 1,
+                    "nombre": "REINA DE LAS ARAÑA",
+                    "puntaje": 20,
+                    "opcion": 1
+                },
+                {
+                    "id_ataque": 2,
+                    "nombre": "NEUROTOXINA / MORDIDA VENENOSA",
+                    "puntaje": 40,
+                    "opcion": 2
+                },
+                {
+                    "id_ataque": 3,
+                    "nombre": "ARAÑA VOLÁTIL / RAUDO FRENESÍ",
+                    "puntaje": 60,
+                    "opcion": 3
+                },
+                {
+                    "id_ataque": 4,
+                    "nombre": "CAPULLO / RÁPEL",
+                    "puntaje": 80,
+                    "opcion": 4
+                },
+                {
+                    "id_ataque": 5,
+                    "nombre": "FORMA ARÁCNIDA",
+                    "puntaje": 100,
+                    "opcion": 5
+                }
+            ],
             "id_habilidad": 4,
             "vida": 100
         },
@@ -44,7 +229,44 @@
             "id_personaje": 5,
             "nombre": "KARMA",
             "opcion": 5,
-            "id_ataque": 5,
+            "ataques": [
+                {
+                    "id_ataque": 0,
+                    "nombre": "DEFENSA",
+                    "puntaje": 0,
+                    "opcion": 0
+                },
+                {
+                    "id_ataque": 1,
+                    "nombre": "FUEGO REUNIFICADOR",
+                    "puntaje": 20,
+                    "opcion": 1
+                },
+                {
+                    "id_ataque": 2,
+                    "nombre": "LLAMA INTERNA",
+                    "puntaje": 40,
+                    "opcion": 2
+                },
+                {
+                    "id_ataque": 3,
+                    "nombre": "RESOLUCIÓN ENFOCADA",
+                    "puntaje": 60,
+                    "opcion": 3
+                },
+                {
+                    "id_ataque": 4,
+                    "nombre": "INSPIRACIÓN",
+                    "puntaje": 80,
+                    "opcion": 4
+                },
+                {
+                    "id_ataque": 5,
+                    "nombre": "MANTRA",
+                    "puntaje": 100,
+                    "opcion": 5
+                }
+            ],
             "id_habilidad": 5,
             "vida": 100
         }
